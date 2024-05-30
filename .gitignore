@@ -1,3 +1,4 @@
 blur_dataset/
 inference/
 results/
+__pycache__/
