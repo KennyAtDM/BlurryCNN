@@ -62,7 +62,7 @@ Blurry_image_classifier/
 Train the model using the training script:
 
 ```sh
-python train.py --epoch EPOCH --model_type MODEL_TYPE
+python train.py --epoch EPOCH
 ```
 
 ### Evaluation
@@ -70,7 +70,7 @@ python train.py --epoch EPOCH --model_type MODEL_TYPE
 Evaluate the model using the evaluation script:
 
 ```sh
-python inference.py [-h] --checkpoint CHECKPOINT --model_type MODEL_TYPE
+python inference.py [-h] --checkpoint CHECKPOINT
 ```
 
 ## Contributing
