@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.metrics import f1_score
 
 # 文件夹路径
-INFERENCE_PATH = '/home/dm/KelingYaoDM/Blurry_image_classifier/inference/bottlechair'
+INFERENCE_PATH = '/home/dm/KelingYaoDM/Blurry_image_classifier/inference/images'
 
 image_files = [f for f in os.listdir(INFERENCE_PATH) if f.endswith(('.png', '.jpg', '.jpeg'))]
 

@@ -32,6 +32,11 @@ class BCNN:
 
     def get_model(self):
         return self.model
+    
+    def unfreeze_layers(self, num_layers):
+        for i, param in enumerate(self.model.features.parameters()):
+            if i < num_layers:
+                param.requires_grad = True
 
     def get_transforms(self):
         return self.auto_transforms
