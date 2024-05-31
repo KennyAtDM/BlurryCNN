@@ -9,7 +9,7 @@ import time
 from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix
 import json
 
-INFERENCE_PATH = '/home/dm/KelingYaoDM/Blurry_image_classifier/inference/images'
+INFERENCE_PATH = '/home/dm/KelingYaoDM/Blurry_image_classifier/inference'
 
 def load_model(checkpoint_path, device='cuda'):
     from model import BCNN
@@ -102,8 +102,8 @@ def main():
     print(f"False Negatives Indexes: {fn_indexes}")
     print(f"True Positives Indexes: {tp_indexes}")
     print(f"True Negatives Indexes: {tn_indexes}")
-    fps = measure_inference_speed(os.path.join(INFERENCE_PATH, image_file), model, transform, device)
-    print(f"Inference speed: {fps:.2f} FPS")
+    # fps = measure_inference_speed(os.path.join(INFERENCE_PATH, image_file), model, transform, device)
+    # print(f"Inference speed: {fps:.2f} FPS")
 
 if __name__ == '__main__':
     main()

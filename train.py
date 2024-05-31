@@ -163,7 +163,6 @@ def main():
     
     from model import BCNN
     bcnn = BCNN(device=device)
-    logger.info(f"Load pretrain model: {args.model_type} ")
     model = bcnn.get_model()
 
     # bcnn.unfreeze_layers(20)  # 仅解冻前20层进行微调

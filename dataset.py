@@ -12,7 +12,7 @@ class BlurDataset(Dataset):
         self.labels = []
 
         # Populate image paths and labels
-        for subdir, label in [('sharp', 0), ('defocused_blurred', 1), ('motion_blurred', 1),('output_blurry', 1)]:
+        for subdir, label in [('sharp', 0),("sharp_backblur",0),('defocused_blurred', 1), ('motion_blurred', 1),('output_blurry', 1),('blur_frontblur', 1)]:
             subdir_path = os.path.join(root_dir, subdir)
             for file_name in os.listdir(subdir_path):
                 if file_name.endswith(('jpg', 'jpeg', 'png')):
